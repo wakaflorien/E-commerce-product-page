@@ -1,0 +1,365 @@
+:root{
+    --primary-color: hsl(26, 100%, 55%);
+    --secondary-color: hsl(25, 100%, 94%);
+    --dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --brown-wrapper: rgba(255, 153, 0, 0.14);
+}
+.header{
+    align-content: center;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--white, white);
+}
+li{
+    float: left;
+}
+li a:hover:not(.active){
+    color:var(--dark-blue);
+}
+li a{
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--dark-grayish-blue);
+    font-family: 'kumbh Sans';
+}
+.logo{
+    position: absolute;
+    width: 193px;
+    height: 60px;
+    left: 215px;
+    top: 70px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+}
+.navigation{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 23px;
+
+    position: absolute;
+    width: 634px;
+    height: 38px;
+    left: 515px;
+    top: 81px;
+}
+.cart{
+    position: absolute;
+    width: 62px;
+    height: 39px;
+    left: 2127px;
+    top: 81px;
+
+}
+.user{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 2220px;
+    top: 68px;
+
+    background: url(.png);
+}
+.line{
+    position: absolute;
+    width: 2069.05px;
+    height: 0px;
+    left: 214.97px;
+    top: 198.45px;
+
+    border: 1px solid var(--light-grayish-blue);
+}
+.product{
+    position: absolute;
+    width: 914px;
+    height: 826px;
+    left: 341px;
+    top: 329px;
+
+    background: url(image.png);
+    border-radius: 37px;
+}
+.product-tumb{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 914px;
+    height: 180px;
+    left: 341px;
+    top: 1204px;
+}
+.sneaker{
+    position: absolute;
+    width: 563px;
+    height: 45px;
+    left: 1520px;
+    top: 452px;
+
+    font-family: 'kumbh Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: var(--primary-color);
+}
+.fall{
+    position: absolute;
+    width: 890px;
+    height: 196px;
+    left: 1520px;
+    top: 497px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    /* or 100% */
+
+
+    color: var(--black);
+    font-family: 'kumbh Sans';
+}
+.desc{
+    position: absolute;
+    width: 813px;
+    height: 122px;
+    left: 1520px;
+    top: 693px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 42px;
+
+    color: var(--dark-grayish-blue);
+    font-family: 'kumbh Sans';
+}
+.product-tumb{
+    left: 300px;
+}
+.tumb-1{
+    position: static;
+    width: 191px;
+    height: 180px;
+    left: 0px;
+    top: 0px;
+
+    border: 5px solid var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 37px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 50px;
+}
+.tumb-1:hover{
+    opacity: 50%;
+}
+.tumb-2{
+    position: static;
+    width: 191px;
+    height: 180px;
+    left: 241px;
+    top: 0px;
+
+    background: url(image.png);
+    border-radius: 37px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 50px;
+}
+.tumb-3{
+    position: static;
+    width: 191px;
+    height: 180px;
+    left: 482px;
+    top: 0px;
+
+    background: url(image.png);
+    border-radius: 37px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 50px;
+}
+.tumb-4{
+    position: static;
+    width: 191px;
+    height: 180px;
+    left: 723px;
+    top: 0px;
+
+    background: url(image.png);
+    border-radius: 37px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 50px;
+}
+.price{
+    position: absolute;
+    width: 319px;
+    height: 75px;
+    left: 1520px;
+    top: 889px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    /* or 100% */
+
+
+    color: var(--black);
+    font-family: 'kumbh Sans';
+
+}
+.discount-wrapper{
+    position: absolute;
+    width: 106px;
+    height: 68px;
+    left: 10px;
+    top: 89px;
+
+    background: var(--brown-wrapper);
+    border-radius: 10px;
+}
+.discount-number{
+    position: static;
+    width: 66px;
+    height: 80px;
+    left: 10px;
+    top: 10px;
+
+    font-family: 'kumbh Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 80px;
+    /* identical to box height, or 267% */
+
+
+    color: var(--primary-color);
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 30px;
+
+}
+.discount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    position: absolute;
+    width: 86px;
+    height: 100px;
+    left: 1930px;
+    top: 873px;
+}
+.o-price{
+    position: absolute;
+    width: 186px;
+    height: 75px;
+    left: 1520px;
+    top: 989px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 80px;
+    /* or 190% */
+
+    text-decoration-line: line-through;
+    font-family: 'kumbh Sans';
+    color: var(--grayish-blue);
+}
+.add-cart{
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    position: absolute;
+    width: 506px;
+    height: 122px;
+    left: 1827px;
+    top: 1113px;
+
+    background: var(--primary-color);
+    border-radius: 37px;
+    border: none;
+    color: var(--white);
+    font-family: 'kumbh Sans';
+
+}
+.add-remove{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    position: absolute;
+    width: 269px;
+    height: 122px;
+    left: 1520px;
+    top: 1113px;
+
+    background: var(--light-grayish-blue);
+    border-radius: 37px;
+    border: none;
+    font-family: 'kumbh Sans';
+}
