@@ -28,7 +28,7 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: var(--white, white); */
 }
 li{
@@ -49,17 +49,10 @@ li a{
 .logo{
     position: absolute;
     width: 193px;
-    height: 60px;
+    height: 90px;
     left: 115px;
-    top: 70px;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
+    top: 41px;
     line-height: 60px;
-}
-.top-icons{
-    align-items: left;
 }
 .navigation{
     
@@ -73,31 +66,31 @@ li a{
     width: 634px;
     height: 38px;
     left: 315px;
-    top: 81px;
+    top: 51px;
 }
 .cart{
     position: absolute;
     width: 62px;
     height: 39px;
-    left: 90%;
-    top: 81px;
+    left: 80%;
+    top: 51px;
 
 }
 .user{
     position: absolute;
     width: 64px;
     height: 64px;
-    left: 95%;
-    top: 68px;
+    left: 88%;
+    top: 41px;
 
     background: url(.png);
 }
 .line{
     position: absolute;
-    width: 92%;
+    width: 85%;
     height: 0px;
     left: 115px;
-    top: 158.45px;
+    top: 108.45px;
 
     border: 1px solid var(--light-grayish-blue);
 }
@@ -119,7 +112,7 @@ li a{
     width: 514px;
     height: 426px;
     left: 141px;
-    top: 229px;
+    top: 159px;
 
     background: url(image.png);
     border-radius: 37px;
@@ -134,16 +127,16 @@ li a{
     width: 614px;
     height: 180px;
     left: 130px;
-    top: 704px;
+    top: 604px;
 }
 .sneaker{
     position: absolute;
     width: 563px;
     height: 45px;
     left: 814px;
-    top: 252px;
+    top: 152px;
 
-    font-family: 'kumbh Sans';
+    font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -160,9 +153,9 @@ li a{
     width: 690px;
     height: 196px;
     left: 814px;
-    top: 275px;
+    top: 175px;
 
-    font-family: Poppins;
+    font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 80px;
@@ -178,7 +171,7 @@ li a{
     width: 690px;
     height: 122px;
     left: 814px;
-    top: 503px;
+    top: 403px;
 
     font-family: "Kumbh Sans";
     font-style: normal;
@@ -187,7 +180,7 @@ li a{
     line-height: 42px;
 
     color: var(--dark-grayish-blue);
-    font-family: 'kumbh Sans';
+    font-family: 'Kumbh Sans';
 }
 .tumb-1{
     position: static;
@@ -266,9 +259,9 @@ li a{
     width: 319px;
     height: 75px;
     left: 814px;
-    top: 560px;
+    top: 460px;
 
-    font-family: Poppins;
+    font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -277,7 +270,7 @@ li a{
 
 
     color: var(--black);
-    font-family: 'kumbh Sans';
+    font-family: 'Kumbh Sans';
 
 }
 .discount-number{
@@ -285,7 +278,7 @@ li a{
     width: 66px;
     height: 50px;
     left: 1010px;
-    top: 590px;
+    top: 490px;
 
     font-family: 'Kumbh Sans';
     font-style: normal;
@@ -308,9 +301,9 @@ li a{
     width: 186px;
     height: 75px;
     left: 814px;
-    top: 620px;
+    top: 520px;
 
-    font-family: Poppins;
+    font-family: 'Kumbh Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
@@ -318,7 +311,7 @@ li a{
     /* or 190% */
 
     text-decoration-line: line-through;
-    font-family: 'kumbh Sans';
+    font-family: 'Kumbh Sans';
     color: var(--grayish-blue);
 }
 .add-cart{
@@ -334,13 +327,13 @@ li a{
     width: 306px;
     height: 80px;
     left: 1000px;
-    top: 713px;
+    top: 613px;
 
     background: var(--primary-color);
     border-radius: 37px;
     border: none;
     color: var(--white);
-    font-family: 'kumbh Sans';
+    font-family: 'Kumbh Sans';
 
 }
 .add-remove{
@@ -354,12 +347,12 @@ li a{
     width: 169px;
     height: 80px;
     left: 814px;
-    top: 713px;
+    top: 613px;
 
     background: var(--light-grayish-blue);
     border-radius: 37px;
     border: none;
-    font-family: 'kumbh Sans';
+    font-family: 'Kumbh Sans';
 }
 @media screen and (max-width: 1000px) {
     
