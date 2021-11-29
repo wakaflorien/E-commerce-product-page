@@ -18,12 +18,6 @@ html, body{
     margin: 0;
     padding: 0;
 }
-/* .header{
-    align-content: center;
-    width: 100%;
-    height: 50px;
-    background-color: red;
-} */
 ul{
     list-style-type: none;
     margin: 0;
@@ -38,7 +32,6 @@ li a:hover:not(.active){
     color:var(--dark-blue);
 }
 li a{
-    display: flex;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
@@ -46,7 +39,7 @@ li a{
     color: var(--dark-grayish-blue);
     font-family: 'Kumbh Sans';
 }
-.logo{
+.header{
     position: absolute;
     width: 193px;
     height: 90px;
@@ -54,13 +47,16 @@ li a{
     top: 41px;
     line-height: 60px;
 }
+.menu{
+    display: none;
+}
 .navigation{
     
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px 23px;
+    /* padding: 0px 23px; */
 
     position: absolute;
     width: 634px;
@@ -104,7 +100,7 @@ li a{
     padding: var(--white);
 }
 .right{
-    flex: 62%;
+    flex: 70%;
     padding: 20px;
 }
 .product{
@@ -354,18 +350,269 @@ li a{
     border: none;
     font-family: 'Kumbh Sans';
 }
-@media screen and (max-width: 1000px) {
-    
-}
-/* laptops */
-@media screen and (max-width: 600px){
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    /* html, body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    } */
     .row .navigation{
         flex-direction: column;
     }
-}
-/* mobile views */
-@media screen and (max-width: 375px){
-    .row .navigation{
-        flex-direction: column;
+    .product{
+        position: absolute;
+        width: 100%;
+        height: 286px;
+        left: 0px;
+        top: 84px;
+
+        background: url(image.png);
+        border-radius: 0px;
+    }
+    .sneaker{
+        position: absolute;
+        width: 242px;
+        height: 30px;
+        left: 30px;
+        top: 384px;
+
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px;
+        /* identical to box height */
+
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+
+        color: var(--primary-color);
+
+    }
+    .fall{
+        position: absolute;
+        width: 330px;
+        height: 168px;
+        left: 30px;
+        top: 414px;
+
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 31px;
+        line-height: 40px;
+        /* or 129% */
+
+
+        color: var(--black);
+    }
+    .product-tumb{
+        display: none;
+    }
+    .desc{
+        position: absolute;
+        width: 312px;
+        height: 122px;
+        left: 30px;
+        top: 498px;
+
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: var(--dark-grayish-blue);
+    }
+    .price{
+        position: absolute;
+        width: 126px;
+        height: 71px;
+        left: 30px;
+        top: 620px;
+
+        font-family: Poppins;
+        font-style: 'Kumbh Sans';
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 80px;
+    /* or 400% */
+
+
+    color: var(--black);
+    }
+    .discount-number{
+        position: absolute;
+        width: 51px;
+        height: 21px;
+        left: 112px;
+        top: 649px;
+
+        /* background: var(--primary-color); */
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    .perc{
+        position: absolute;
+        width: 33px;
+        height: 80px;
+        left: 10px;
+        top: -38px;
+
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 80px;
+        /* identical to box height, or 533% */
+
+        color: #FF9900;
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 10px 0px;
+    }
+    .add-remove{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+
+        position: absolute;
+        width: 311px;
+        height: 60px;
+        left: 28px;
+        top: 716px;
+
+        background: #F3F9F9;
+        border-radius: 17px;
+    }
+    .add-cart{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        position: absolute;
+        width: 311px;
+        height: 60px;
+        left: 28px;
+        top: 802px;
+
+        background: var(--primary-color);
+        /* box-shadow: 0px 1px 10px var(--primary-color); */
+        border-radius: 17px;
+    }
+    .o-price{
+        position: absolute;
+        width: 85px;
+        height: 62px;
+        left: 257px;
+        top: 620px;
+
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 80px;
+        /* or 400% */
+
+        text-decoration-line: line-through;
+
+        color: #7C7474;
+    }
+    .menu{
+        display: inline;
+        color: var(--black);
+    }
+    .header{
+        position: absolute;
+        width: 310px;
+        height: 62px;
+        left: 17px;
+        top: 20px;
+    }
+    .cart{
+        position: absolute;
+        width: 30px;
+        height: 62px;
+        left: 257px;
+        top: 35px;
+    }
+    .user{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 285px;
+        top: 30px;
+    }
+    .navigation, .line{
+        display: none;
     }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 760px) {
+    .cart{
+        position: absolute;
+        left: 90%;
+    }
+    .user{
+        position: absolute;
+        left: 100%;
+    }
+    /* .product{
+        width: 100%;
+    } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .cart{
+        position: absolute;
+        left: 95%;
+        top:60px;
+    }
+    .user{
+        position: absolute;
+        left: 100%;
+    }
+    #right-section{
+        position: absolute;
+        left: 50px;
+        background-color: violet;
+    }
+    .navigation{
+        left: 250px
+    }
+    .line{
+        width: 100%;
+    }
+    /* .product{
+        width: 400px;
+        height: ;
+    } */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .cart{
+        position: absolute;
+        left: 80%;
+    }
+    .user{
+        position: absolute;
+        left: 88%;
+    }
+    .line{
+        width: 85%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {...}
